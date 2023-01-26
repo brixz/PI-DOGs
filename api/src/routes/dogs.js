@@ -1,13 +1,13 @@
 const express = require('express');
-
+const findAllDogName = require('../Controllers/controller-dogs.js');
 const router = express.Router();
 
-router.get("/", );
+router.get('/',findAllDogName);
 
-router.get("/:id", );
+// router.get("/:id", );
 
-router.get("/:id", );
+// router.get("/:id", );
 
-router.post("/", );
+// router.post("/", );
 
 module.exports = router;
