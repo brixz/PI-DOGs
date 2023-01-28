@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { createDog, getTemperaments } from "../redux/actions";
 import { Link, useHistory } from "react-router-dom";
 import "./Form.css";
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 
 function validate (input) {
     let errors = {};
@@ -105,7 +105,7 @@ export default function Form(){
         if (input.name && input.temperament) {
         e.preventDefault();
         dispatch(createDog(input)) 
-        swal("Dog created successfully! 😊");
+        //swal("Dog created successfully! 😊");
         setInput({
             name: "",
             life_span: "",
@@ -119,7 +119,7 @@ export default function Form(){
         history.push("/home")
     }
     else{
-        swal("Please fill all the fields!");
+       // swal("Please fill all the fields!");
     }
      }
 

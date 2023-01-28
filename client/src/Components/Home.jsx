@@ -7,8 +7,10 @@ import Card from './Card'
 import './Home.css'
 import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
-import loading from '../photos/loading.gif'
-import hangin from "../photos/hangin.gif"
+// import loading from '../photos/loading.gif'
+// import hangin from "../photos/hangin.gif"
+const hangin = "https://";
+const loading ="https:/";
 
 export default function Home(){
 

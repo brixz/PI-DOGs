@@ -1,12 +1,13 @@
 import './Details.css'
-// import loading from '../photos/loading.gif'
+//import loading from '../photos/loading.gif'
+
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { getDogsDetails, clean } from "../redux/actions";
 var img = 'https://cdnb.artstation.com/p/assets/images/images/040/159/961/original/camila-xiao-pixel-art-doge-cute-dog-aniamted-loop-gif-barking-running-scared-and-happy-loop-gif-8bit-16bit.gif?1628036255'
-
+const loading = "https://";
 
 
 export default function Details(){
@@ -23,7 +24,7 @@ return (
   <div className='background'>
     <div className='detailsCss'>
         {dogsDetail.length === 0 ? <img className="loadingGiff" src={loading} alt="Loading..." /> :
-    <div className='detailsContainer'>
+        <div className='detailsContainer'>
         <div>
             <div className='h2css'>
              <h2> {dogsDetail.name} </h2> 
