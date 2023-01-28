@@ -10,7 +10,7 @@ module.exports = (sequelize) => {
       primaryKey: true
     },
     name: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       defaultValue: 'There is no name'
     }
   });
