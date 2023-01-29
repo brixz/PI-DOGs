@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { createDog, getTemperaments } from "../redux/actions";
 import { Link, useHistory } from "react-router-dom";
 import "./Form.css";
-// import swal from 'sweetalert';
 
 function validate (input) {
     let errors = {};
@@ -20,7 +19,6 @@ function validate (input) {
     else if (input.life_span < 1 || input.life_span > 25) {
         errors.life_span = "Between 1 - 25 years"
     }
-
     if (!input.min_height){
         errors.min_height = "Min height is required"
     }
@@ -59,7 +57,7 @@ export default function Form(){
      const history = useHistory()
      
     
-     const [errors, setErrors] = useState({})
+     const [errors , setErrors] = useState({})
      const temperaments = useSelector((state) => state.temperaments)
 
      useEffect(() => {
@@ -104,8 +102,7 @@ export default function Form(){
     function handleSubmit(e) {
         if (input.name && input.temperament) {
         e.preventDefault();
-        dispatch(createDog(input)) 
-        //swal("Dog created successfully! 😊");
+        dispatch(createDog(input))
         setInput({
             name: "",
             life_span: "",
@@ -119,7 +116,6 @@ export default function Form(){
         history.push("/home")
     }
     else{
-       // swal("Please fill all the fields!");
     }
      }
 

@@ -131,12 +131,6 @@ case CREATE_DOG:
     return {
         ...state,
     }
-    case FILTER_BY_4:
- 
-    return{
-            ...state,
-            dogs: state.dogs.filter(e => e.min_weight === 4)
-        }
         default: 
         return state;
     }

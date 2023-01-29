@@ -10,7 +10,7 @@ export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS"
 export const FILTER_BY_BREED = "FILTER_BY_BREED"
 export const CREATE_DOG = "CREATE_DOG"
 export const CLEAN = "CLEAN"
-export const FILTER_BY_4 = 'FILTER_BY_4'
+
 
 export function getDogs () {
 return async function (dispatch) {
@@ -28,7 +28,7 @@ return async function (dispatch) {
 
 export function getTemperaments (){
     return async function (dispatch){
-        var json = await axios("http://localhost:3001/temperaments", {});
+        var json = await axios.get("http://localhost:3001/temperaments", {});
         return dispatch ({
             type: GET_TEMPERAMENTS, 
             payload: json.data
@@ -89,10 +89,11 @@ export function filterByBreed (payload) {
 export function createDog (payload) {
     return async function(dispatch){
         try{
-            await axios.post('http://localhost:3001/dogs', payload);
-            return {
+            const create = await axios.post('http://localhost:3001/dogs', payload);
+            return dispatch({
                 type: CREATE_DOG,
-                }
+                payload:create.data
+                })
             } 
         catch(error){
               alert("Post failed")
@@ -103,12 +104,5 @@ export function createDog (payload) {
 export function clean () {
     return {
         type: "CLEAN"
-    }
-}
-
-export function filterBy4 (payload){
-    return{
-        type: FILTER_BY_4,
-        payload
     }
 }

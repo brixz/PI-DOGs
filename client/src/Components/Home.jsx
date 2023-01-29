@@ -2,15 +2,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getDogs, orderBy, filterByTemperaments, getTemperaments, filterByBreed, filterBy4 } from "../redux/actions";
+import { getDogs, orderBy, filterByTemperaments, getTemperaments, filterByBreed } from "../redux/actions";
 import Card from './Card'
 import './Home.css'
 import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
-// import loading from '../photos/loading.gif'
+ import loading from '../photos/loading.gif'
 // import hangin from "../photos/hangin.gif"
 const hangin = "https://";
-const loading ="https:/";
+
 
 export default function Home(){
 
@@ -73,12 +73,6 @@ function handleFilterByBreed (e){
     setCurrentPage(1)
     setBreeds(e.target.value) 
 }
-
-// function handleFilterBy4(){
-//     dispatch(filterBy4())
-//     setCurrentPage(1)
-// }
-
     return(
         
         <div className="homeDiv">
