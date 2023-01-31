@@ -79,7 +79,7 @@ function handleFilterByBreed (e){
             <div className="welcome">
             <img className="hangIn" src={hangin} alt="img" />
             <img className="hangIn2" src={hangin} alt="img" />
-            <h1> 🐕 Welcome 🐕 </h1>
+            <h1> Welcome! </h1>
             </div>
             {/* <div>
                 <button onClick={(e) => handleFilterBy4(e)}>

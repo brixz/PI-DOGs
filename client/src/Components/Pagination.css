@@ -29,7 +29,7 @@ li {
 }
 
 .paginationButton1:hover{     
-    color: #9d8189;       
+    color: #df0f0f;       
 }
 
 .paginationButton2{
@@ -41,7 +41,7 @@ li {
 }
 
 .paginationButton2:hover{
-    color: #9d8189;
+    color: #d71919;
     box-shadow: 0 0 5px, #d8afc5,
                 0 0 25px, #d8afc5,
                 0 0 50px,  #d8afc5,
@@ -62,7 +62,7 @@ li {
 } */
 
 .buttonCss:hover{
-    color: #9d8189;
+    color: #cf0b0b;
     box-shadow: 0 0 5px, #d8afc5,
                 0 0 25px, #d8afc5,
                 0 0 50px,  #d8afc5,
