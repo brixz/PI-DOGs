@@ -24,8 +24,6 @@ export default function SearchBar(){
     }
     }
     
-    
-
     return(
         <div>
             <input className='breedInputCss' type='text'

@@ -1,16 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { getDogs, orderBy, filterByTemperaments, getTemperaments, filterByBreed } from "../redux/actions";
 import Card from './Card'
 import './Home.css'
 import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
- import loading from '../photos/loading.gif'
-// import hangin from "../photos/hangin.gif"
-const hangin = "https://";
-
+import loading from '../photos/loading.gif'
 
 export default function Home(){
 
@@ -77,16 +73,8 @@ function handleFilterByBreed (e){
         
         <div className="homeDiv">
             <div className="welcome">
-            <img className="hangIn" src={hangin} alt="img" />
-            <img className="hangIn2" src={hangin} alt="img" />
             <h1> Welcome! </h1>
             </div>
-            {/* <div>
-                <button onClick={(e) => handleFilterBy4(e)}>
-                   FILTER MIN WEIGHT BY 4
-                </button>
-                
-                </div>  */}
             <div>
             <button className='refBtn' onClick={e => {handleClick(e)}}>Refresh</button>
             </div>

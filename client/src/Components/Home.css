@@ -7,23 +7,13 @@
     flex-wrap: wrap;
 }
 
-.hangIn{
-    position: absolute;
-    transform: translateY(-100px) translateX(500px);
-}
-
-.hangIn2{
-    position: absolute;
-    transform: translateY(-100px) translateX(-660px);
-}
-
 .welcome{
     font-family: "Comic Sans MS", "Comic Sans";
 }
 
 .filterBy{
     font-family: "Comic Sans MS", "Comic Sans";
-    margin-right: 500px;
+    margin-right: 550px;
     background-color: rgba(160, 142, 115, 0.619);
     border: 1px solid;
     transform: translateY(-3px);
@@ -117,11 +107,9 @@
 
 .homeDiv{
     display: inline-block;
-    /* background-image: url('../photos/background1.jpg'); */
     width: 100%;
     height: 200vh;
     background-position: center;
     background-size: 2000px;   
-    /* cursor: url(../cursors/paw.svg), auto; */
 }
 

@@ -57,10 +57,6 @@ li {
     font-family: "Comic Sans MS", "Comic Sans";
 }
 
-/* .buttonCss:focus{
-    color: red;
-} */
-
 .buttonCss:hover{
     color: #cf0b0b;
     box-shadow: 0 0 5px, #d8afc5,

@@ -1,15 +1,15 @@
 import axios from 'axios';
 
 export const GET_DOGS = "GET_DOGS";
-export const GET_DOGS_DETAILS = "GET_DOGS_DETAILS"
+export const GET_DOGS_DETAILS = "GET_DOGS_DETAILS";
 export const GET_BY_BREED = "GET_BY_BREED";
-export const ORDER_BY_ALPHABET = "ORDER_BY_ALPHABET"
-export const ORDER_BY = "ORDER_BY"
-export const FILTER_BY_TEMPERAMENTS = "FILTER_BY_TEMPERAMENTS"
-export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS"
-export const FILTER_BY_BREED = "FILTER_BY_BREED"
-export const CREATE_DOG = "CREATE_DOG"
-export const CLEAN = "CLEAN"
+export const ORDER_BY_ALPHABET = "ORDER_BY_ALPHABET";
+export const ORDER_BY = "ORDER_BY";
+export const FILTER_BY_TEMPERAMENTS = "FILTER_BY_TEMPERAMENTS";
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS";
+export const FILTER_BY_BREED = "FILTER_BY_BREED";
+export const CREATE_DOG = "CREATE_DOG";
+export const CLEAN = "CLEAN";
 
 
 export function getDogs () {
@@ -93,7 +93,8 @@ export function createDog (payload) {
             return dispatch({
                 type: CREATE_DOG,
                 payload:create.data
-                })
+                }), alert("Successfully created dog")
+                
             } 
         catch(error){
               alert("Post failed")

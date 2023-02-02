@@ -1,10 +1,8 @@
-
 const axios = require('axios');
 const { Dogs, Temperament} = require('../../db');
 const API = 'https://api.thedogapi.com/v1/breeds'
 
 const dogsDBinfo = async ()=>{
-
    try{
      let allInDB = await Dogs.findAll({
        include: [Temperament],
@@ -29,7 +27,6 @@ const dogsDBinfo = async ()=>{
      console.log(error);
    }
 }
-
 
 const getApiInfo = async () => {
    const apiInfo = await axios.get(API)
@@ -59,7 +56,8 @@ const allInfo = async () => {
    return infoTotal;
 }
 
-
 module.exports = {
-   allInfo, getApiInfo, dogsDBinfo, 
+   allInfo,
+   getApiInfo,
+   dogsDBinfo, 
 };

@@ -1,10 +1,8 @@
-
 const { Router } = require("express");
 const router = Router();
 const { allInfo } = require("./controllers/DogsInfo");
 
 router.get('/dogs', async (req, res) => {
-  
   if(req.query.name){
   try{
       let {name} = req.query
