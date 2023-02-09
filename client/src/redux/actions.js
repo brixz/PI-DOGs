@@ -93,7 +93,7 @@ export function createDog (payload) {
             return dispatch({
                 type: CREATE_DOG,
                 payload:create.data
-                }), alert("Successfully created dog")
+                }) && alert("Successfully created dog")
                 
             } 
         catch(error){
