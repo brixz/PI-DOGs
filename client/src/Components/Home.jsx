@@ -38,7 +38,7 @@ useEffect(() => {
     // dispatch(filterByTemperaments()) 
     dispatch(getTemperaments())
     }
-})
+}, [dispatch])
 
 
 
