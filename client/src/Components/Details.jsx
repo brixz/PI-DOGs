@@ -29,7 +29,7 @@ return (
              <h2> {dogsDetail.name} </h2> 
              </div>
                  <div>
-                     <img className="imag" src={dogsDetail.image ? dogsDetail.image : img } />
+                     <img className="imag" src={dogsDetail.image || img} alt="imag of dog"></img>
                  </div>
                 <h3 className='h3temperaments'>{dogsDetail.createdInDataBase ? dogsDetail.temperaments.map(el => el.name ).join(', ') : dogsDetail.temperament?.split(', ').map(e => e ).join(', ') }</h3>
                  <p className='weightCss' > Min Weight: {dogsDetail.min_weight},  Max Weight: {dogsDetail.max_weight} </p>
