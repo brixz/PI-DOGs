@@ -8,7 +8,7 @@ import {Provider} from 'react-redux'
 import store from './redux/store'
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://pi-dogs-production-2e1c.up.railway.app/";
 //axios.defaults.baseURL = "pi-dogs-production-6f67.up.railway.app";
 
 ReactDOM.render(
